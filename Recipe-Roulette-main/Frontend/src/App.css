@@ -1,0 +1,349 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+.createAccount {
+  width: 800px;
+  padding: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  color: #25262a;
+  z-index: 2; /*ensures above the background*/
+}
+
+.forgot-password {
+  width: 800px;
+  padding: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  color: #25262a;
+  z-index: 2; /*ensures above the background*/
+}
+
+.enter-code {
+  width: 600px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  color: #25262a;
+  z-index: 2; /*ensures above the background*/
+}
+.enter-code button {
+  margin-top: 20px;
+}
+
+.change-password {
+  width: 600px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  color: #25262a;
+  z-index: 2; /*ensures above the background*/
+}
+
+.login{
+  width: 800px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #25262a;
+  position: relative;
+  z-index: 2; /*ensures above the background*/
+}
+
+.page-background{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  background-image:url(images/food-roulette.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -10; /*ensures behind the login / create account boxes */
+}
+
+input[type=email], input[type=password], input[type=displayName], input[type=favoriteFood], input[type=allergies]{
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #2a2d32;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/*css for CreatePost inputs-Tucker*/
+input[type=text], input[type=file]{
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+/*Having trouble getting the textareas centered*/
+textarea{
+  display: block;
+  margin: auto;
+}
+label{
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+/*button adjustments-Fletcher*/
+button {
+  min-width: 10vw; 
+  padding: 10px 20px; 
+  margin: 10px;
+  border: none;
+  background-color: #1ac04c;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block; 
+  text-align: center; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+#createAccountButton {
+  margin-top: 10px; 
+  align-self: center;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 10px;
+  cursor: pointer;
+  background-color: #25262a;
+  color: white;
+  border-radius: 4px;
+}
+
+button#loginButton {
+  position: relative;
+}
+
+#passwordStrength, #passwordConstraints {
+  color: red;
+  font-size: 0.8rem;
+  margin: 10px;
+}
+
+#loginLink, #createAccountLink, #forgotPasswordLink{
+  font-size: 16pt;
+  margin-top: -40px;
+}
+
+.post {
+  border: 2px solid;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.report {
+  border: 2px solid;
+  padding: 10px;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.viewReportedPostButton{
+  margin-right: 10px;
+}
+
+.resolveReportButton{
+  background-color: red;
+}
+
+
+.allEncompassingDiv {
+  padding-top: 60px;
+  height: 100vh;
+  width: 95vw;
+  text-align: center;
+}
+
+.homeBackground{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* App.css adjustments for the homepage-Fletcher */
+.home {
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+
+.createPostForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.createPostForm > * {
+  margin: 15px 0;
+}
+
+.postImage{
+  max-width: 25vw;
+}
+
+.search-container {
+  padding-top: 200px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+}
+
+.search-sections {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.section {
+  flex: 1;
+  margin: 0 10px; 
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tag {
+  padding: 5px 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.input-large {
+  width: 100%;
+  padding: 8px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  margin-top: 20px;
+}
+
+.recipe-details {
+  width: 60%; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px auto 20px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  transition: transform 0.3s ease;
+}
+
+.recipe-details:hover {
+  transform: translateY(-3px);
+}
+
+.post {
+  width: 100%;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post img {
+  width: 100%; 
+  height: 150px; 
+}
+
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.dark-mode{
+  color: white; 
+  background-color: #282c34;
+  border-color: white;
+  outline-color: white;
+}
